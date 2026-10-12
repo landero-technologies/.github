@@ -1,0 +1,67 @@
+name: Bug
+description: Report existing behavior that does not work as intended and requires correction.
+type: Bug
+title: "[Bug] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use a Bug when existing behavior does not work as intended.
+
+  - type: textarea
+    id: observed_behavior
+    attributes:
+      label: Observed behavior
+      description: What is currently happening?
+      placeholder: Describe the observed behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      description: What should happen instead?
+      placeholder: Describe the expected behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide steps to reproduce the issue where applicable.
+      placeholder: List the reproduction steps.
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: What is the impact of this issue?
+      placeholder: Describe affected users, systems, or workflows.
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Provide relevant environment details.
+      placeholder: e.g. production, staging, browser, service, dataset
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Add relevant logs, screenshots, error messages, or other evidence.
+      placeholder: Add evidence if available.
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance criteria
+      description: What conditions must be satisfied for this Bug to be considered resolved?
+      placeholder: List acceptance criteria.
+    validations:
+      required: true

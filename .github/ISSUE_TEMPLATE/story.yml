@@ -1,0 +1,60 @@
+name: Story
+description: Create a specific user- or system-facing requirement that delivers a distinct piece of value.
+type: Story
+title: "[Story] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use a Story for a specific requirement that delivers observable user or system value.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What context is needed to understand this Story?
+      placeholder: Describe the relevant context.
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirement
+    attributes:
+      label: Requirement
+      description: What should the user or system be able to do?
+      placeholder: Describe the requirement.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      description: What behavior or outcome is expected?
+      placeholder: Describe the expected behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance criteria
+      description: What observable or verifiable conditions must be satisfied?
+      placeholder: List acceptance criteria.
+    validations:
+      required: true
+
+  - type: textarea
+    id: edge_cases
+    attributes:
+      label: Edge cases
+      description: List relevant edge cases or exceptional conditions.
+      placeholder: Add edge cases if known.
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List relevant dependencies, blockers, or related work.
+      placeholder: Add dependencies if known.

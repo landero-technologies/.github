@@ -1,0 +1,74 @@
+name: Epic
+description: Create a large initiative that groups multiple related work items under one broader objective.
+type: Epic
+title: "[Epic] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use an Epic for a large initiative or objective that requires multiple related work items.
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What broader objective should this Epic achieve?
+      placeholder: Describe the main objective.
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected outcome
+      description: What should be true when this Epic is completed?
+      placeholder: Describe the expected outcome.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is included in this Epic?
+      placeholder: Describe the scope.
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+      description: What is explicitly excluded from this Epic?
+      placeholder: Describe what is not included.
+
+  - type: textarea
+    id: success_criteria
+    attributes:
+      label: Success criteria
+      description: How will we know this Epic has achieved its objective?
+      placeholder: List observable or verifiable success criteria.
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List relevant dependencies, blockers, or related initiatives.
+      placeholder: Add dependencies if known.
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Known constraints
+      description: List important technical, product, operational, or organizational constraints.
+      placeholder: Add known constraints if applicable.
+
+  - type: textarea
+    id: open_questions
+    attributes:
+      label: Open questions
+      description: List important unresolved questions.
+      placeholder: Add open questions if applicable.

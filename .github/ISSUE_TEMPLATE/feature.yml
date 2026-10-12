@@ -1,0 +1,67 @@
+name: Feature
+description: Create a meaningful product or system capability composed of related stories or supporting work.
+type: Feature
+title: "[Feature] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use a Feature for a cohesive product or system capability.
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What capability should this Feature provide?
+      placeholder: Describe the objective.
+    validations:
+      required: true
+
+  - type: textarea
+    id: value
+    attributes:
+      label: Expected value
+      description: What product or system value will this Feature deliver?
+      placeholder: Describe the expected value.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is included in this Feature?
+      placeholder: Describe the scope.
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+      description: What is explicitly excluded?
+      placeholder: Describe what is not included.
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance criteria
+      description: What observable or verifiable conditions must be satisfied?
+      placeholder: List acceptance criteria.
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List relevant dependencies, blockers, or related work.
+      placeholder: Add dependencies if known.
+
+  - type: textarea
+    id: open_questions
+    attributes:
+      label: Open questions
+      description: List important unresolved questions.
+      placeholder: Add open questions if applicable.

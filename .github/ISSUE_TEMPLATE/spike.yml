@@ -1,0 +1,67 @@
+name: Spike
+description: Create a time-boxed investigation or experiment used to reduce uncertainty before a decision or implementation.
+type: Spike
+title: "[Spike] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use a Spike when important uncertainty must be reduced before responsible planning or implementation.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question or uncertainty
+      description: What question or uncertainty should this Spike resolve?
+      placeholder: Describe the uncertainty.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What context is needed to understand this investigation?
+      placeholder: Describe the relevant context.
+    validations:
+      required: true
+
+  - type: textarea
+    id: investigation_scope
+    attributes:
+      label: Investigation scope
+      description: What should be investigated, tested, compared, or prototyped?
+      placeholder: Describe the investigation scope.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_output
+    attributes:
+      label: Expected output
+      description: What result should this Spike produce?
+      placeholder: Recommendation, decision, findings, benchmark, prototype, or follow-up work.
+    validations:
+      required: true
+
+  - type: textarea
+    id: decision_criteria
+    attributes:
+      label: Decision criteria
+      description: What criteria should be used to evaluate the findings?
+      placeholder: List decision criteria if applicable.
+
+  - type: input
+    id: timebox
+    attributes:
+      label: Timebox
+      description: Define the intended investigation limit where appropriate.
+      placeholder: e.g. 1 day, 3 days, 1 week
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List relevant dependencies, blockers, or related work.
+      placeholder: Add dependencies if known.

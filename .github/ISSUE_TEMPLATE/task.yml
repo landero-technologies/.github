@@ -1,0 +1,60 @@
+name: Task
+description: Create a concrete unit of implementation, operational, documentation, configuration, or technical work.
+type: Task
+title: "[Task] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use a Task for concrete work that does not itself need to be represented as a Story.
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What should this Task accomplish?
+      placeholder: Describe the objective.
+    validations:
+      required: true
+
+  - type: textarea
+    id: work
+    attributes:
+      label: Work to perform
+      description: What work needs to be completed?
+      placeholder: Describe the work to perform.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_outcome
+    attributes:
+      label: Expected outcome
+      description: What should be true when this Task is completed?
+      placeholder: Describe the expected outcome.
+    validations:
+      required: true
+
+  - type: textarea
+    id: completion_criteria
+    attributes:
+      label: Completion criteria
+      description: What verifiable conditions must be satisfied?
+      placeholder: List completion criteria.
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical_notes
+    attributes:
+      label: Technical notes
+      description: Add relevant implementation or technical context.
+      placeholder: Add technical notes if applicable.
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List relevant dependencies, blockers, or related work.
+      placeholder: Add dependencies if known.
